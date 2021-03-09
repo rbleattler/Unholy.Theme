@@ -1,7 +1,6 @@
 {
     "name": "unholy",
     "displayName": "Unholy",
-    "publisher": "CoastTech",
     "description": "Dark. Mostly. ",
     "version": "0.0.1",
     "engines": {
@@ -11,10 +10,12 @@
         "Themes"
     ],
     "contributes": {
-        "themes": [{
-            "label": "Unholy",
-            "uiTheme": "vs-dark",
-            "path": "./themes/Unholy-color-theme.json"
-        }]
+        "themes": [
+            {
+                "label": "Unholy",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Unholy-color-theme.json"
+            }
+        ]
     }
 }
