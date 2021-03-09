@@ -146,7 +146,7 @@
 				"support.class"
 			],
 			"settings": {
-				//"fontStyle": "italic",
+				"fontStyle": "italic",
 				"foreground": "#66D9EF"
 			}
 		},

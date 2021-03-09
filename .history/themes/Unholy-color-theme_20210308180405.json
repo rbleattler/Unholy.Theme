@@ -65,8 +65,7 @@
 			"name": "Storage",
 			"scope": "storage",
 			"settings": {
-				"foreground": "#C823FA",
-				"fontStyle": " italic"
+				"foreground": "#C823FA"
 			}
 		},
 		{
@@ -112,8 +111,7 @@
 			"name": "Tag name",
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#C823FA",
-				"fontStyle": " italic"
+				"foreground": "#C823FA"
 			}
 		},
 		{
@@ -146,7 +144,7 @@
 				"support.class"
 			],
 			"settings": {
-				//"fontStyle": "italic",
+				"fontStyle": "italic",
 				"foreground": "#66D9EF"
 			}
 		},
