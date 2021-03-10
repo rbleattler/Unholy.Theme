@@ -21,8 +21,5 @@
             "uiTheme": "vs-dark",
             "path": "./themes/Unholy-color-theme.json"
         }]
-    },
-    "scripts": {
-        "deploy": "\"E:\\ProgramData\\npm\\vsce.cmd\" publish --yarn"
     }
 }
