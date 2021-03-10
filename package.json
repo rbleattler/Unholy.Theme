@@ -2,8 +2,8 @@
     "name": "unholy",
     "displayName": "Unholy",
     "publisher": "CoastTech",
-    "description": "Dark. Mostly. ",
-    "version": "0.0.1",
+    "description": "Dark. Mostly. Inspired heavily by Dark++ (DryWolf)",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.54.0"
     },
