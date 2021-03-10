@@ -27,7 +27,7 @@ steps:
     npm config set prefix E:\ProgramData\npm;
     npm install -g vsce --save-dev
     $Path = $Path + ";E:\ProgramData\npm\"
-    . 'E:\ProgramData\npm\yarn.cmd' deploy;
+    . 'E:\ProgramData\npm\vsce.cmd' publish;
   displayName: Publish Package
   env:
     DISPLAY: ':99.0'
