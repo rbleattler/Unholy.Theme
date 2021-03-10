@@ -17,15 +17,17 @@ pool:
 
 steps:
 
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+# - task: NodeTool@0
+#   inputs:
+#     versionSpec: '10.x'
+#   displayName: 'Install Node.js'
 
 - pwsh: |
     echo ">>> Publish"
-    . 'C:\Program Files (x86)\Yarn\bin\yarn.cmd' deploy
-  displayName: Run Tests
+    npm config set prefix E:\ProgramData\npm;
+    $Path = $Path + ";E:\ProgramData\npm\"
+    . 'E:\ProgramData\npm\yarn.cmd' deploy;
+  displayName: Publish Package
   env:
     DISPLAY: ':99.0'
     VSCE_PAT: $(VSCE_PAT)
