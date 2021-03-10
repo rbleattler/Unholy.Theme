@@ -13,6 +13,7 @@ strategy:
       imageName: 'windows-latest'
 
 pool:
+  name: default
   vmImage: $(imageName)
 
 steps:
