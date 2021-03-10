@@ -24,7 +24,7 @@ steps:
 
 - pwsh: |
     echo ">>> Publish"
-    yarn deploy
+    . 'C:\Program Files (x86)\Yarn\bin\yarn.cmd' deploy
   displayName: Run Tests
   env:
     DISPLAY: ':99.0'
