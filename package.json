@@ -1,6 +1,11 @@
 {
     "name": "unholy",
     "displayName": "Unholy",
+    "repository": {
+        "url": "",
+        "directory": "",
+        "type": ""
+    },
     "publisher": "CoastTech",
     "description": "Dark. Mostly. Inspired heavily by Dark++ (DryWolf)",
     "version": "0.0.2",
