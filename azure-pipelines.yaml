@@ -12,22 +12,23 @@ strategy:
       imageName: 'windows-latest'
 
 pool:
+  name: Default
   vmImage: $(imageName)
 
 steps:
 
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+# - task: NodeTool@0
+#   inputs:
+#     versionSpec: '10.x'
+#   displayName: 'Install Node.js'
 
-# - pwsh: |
-#     echo ">>> Compile vscode-test"
-#     yarn && yarn compile
-#     echo ">>> Compiled vscode-test"
-#     cd sample
-#     echo ">>> Run sample integration test"
-#     yarn && yarn compile && yarn test
-#   displayName: Run Tests
-#   env:
-#     DISPLAY: ':99.0'
+- pwsh: |
+    echo ">>> Publish"
+    npm config set prefix E:\ProgramData\npm;
+    npm install -g vsce --save-dev
+    $Path = $Path + ";E:\ProgramData\npm\"
+    . 'E:\ProgramData\npm\yarn.cmd' deploy;
+  displayName: Publish Package
+  env:
+    DISPLAY: ':99.0'
+    VSCE_PAT: $(VSCE_PAT)
