@@ -25,6 +25,7 @@ steps:
 - pwsh: |
     echo ">>> Publish"
     npm config set prefix E:\ProgramData\npm;
+    npm install -g vsce --save-dev
     $Path = $Path + ";E:\ProgramData\npm\"
     . 'E:\ProgramData\npm\yarn.cmd' deploy;
   displayName: Publish Package
