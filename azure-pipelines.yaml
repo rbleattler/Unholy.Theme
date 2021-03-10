@@ -27,7 +27,7 @@ steps:
     npm config set prefix E:\ProgramData\npm;
     npm install -g vsce --save-dev
     $Path = $Path + ";E:\ProgramData\npm\"
-    . 'E:\ProgramData\npm\vsce.cmd' publish;
+    . 'E:\ProgramData\npm\vsce.cmd' publish -p ${env:VSCE_PAT};
   displayName: Publish Package
   env:
     DISPLAY: ':99.0'
