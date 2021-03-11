@@ -514,6 +514,13 @@
 		},
 		{
 			"name": "",
+			"scope": "storage.type.powershell",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"name": "",
 			"scope": "storage.type.cs",
 			"settings": {
 				"foreground": "#4EC9B0"
@@ -807,9 +814,9 @@
 		},
 		{
 			"name": "Built-in constant",
-			"scope": "constant.language",
+			"scope": "constant.language.powershell",
 			"settings": {
-				"foreground": "#AE81FF"
+				"foreground": "#569cd6"
 			}
 		},
 		{
@@ -857,7 +864,7 @@
 			"name": "Class name",
 			"scope": "entity.name.class",
 			"settings": {
-				"foreground": "#BAB359",
+				"foreground": "#DCDCAA",
 				"fontStyle": " bold  "
 			}
 		},
@@ -866,14 +873,14 @@
 			"scope": "entity.other.inherited-class",
 			"settings": {
 				"fontStyle": "italic  underline",
-				"foreground": "#BAB359"
+				"foreground": "#DCDCAA"
 			}
 		},
 		{
 			"name": "Function name",
 			"scope": "entity.name.function",
 			"settings": {
-				"foreground": "#BAB359"
+				"foreground": "#DCDCAA"
 			}
 		},
 		{
@@ -896,7 +903,7 @@
 			"name": "Tag attribute",
 			"scope": "entity.other.attribute-name",
 			"settings": {
-				"foreground": "#BAB359"
+				"foreground": "#DCDCAA"
 			}
 		},
 		{
@@ -964,25 +971,39 @@
 			}
 		},
 		{
+			"name": "PowerShell Support Function Attribute",
+			"scope": "support.function.attribute.powershell",
+			"settings": {
+				"foreground": "#DCDCAA"
+			}
+		},
+		{
 			"name": "PowerShell String Punctuation",
 			"scope": [
 				"punctuation.definition.string.begin",
 				"punctuation.definition.string.end"
 			],
 			"settings": {
-				"foreground": "#DCDCAA"
+				"foreground": "#CE9178"
 			}
 		},
 		{
 			"name": "PowerShell Variable Member",
-			"scope": "variable.other.member.powershell[0]",
+			"scope": "variable.other.member.powershell",
 			"settings": {
 				"foreground": "#E6992E"
+			}
+		},
+		{
+			"name": "PowerShell Function Storage",
+			"scope": "storage.type.function.powershell",
+			"settings": {
+				"foreground": "#569CD6"
 			}
 		}
 	],
 	"colors": {
-		"editor.background": "#2c2c2c",
+		"editor.background": "#202020",
 		"editorCursor.foreground": "#F8F8F0",
 		"editor.foreground": "#F8F8F2",
 		"editorWhitespace.foreground": "#3B3B3B",
