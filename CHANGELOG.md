@@ -6,4 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
+- Initial release 
+
+## 0.4
+
+Updated colors to more closely match Dark++ with additional PS specific tokenization.
